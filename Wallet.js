@@ -8,10 +8,10 @@ class Wallet {
             }
             return false;
         };
-        this.changeMoney = (result, bid) => {
-            if (result === 'win') {
+        this.changeMoney = (win, bid) => {
+            if (win) {
                 return _money += bid;
-            } else if (result === 'lose') {
+            } else if (!win) {
                 return _money -= bid;
             } else {
                 throw new Error('Błędny wynik');
