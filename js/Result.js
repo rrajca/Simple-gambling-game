@@ -1,7 +1,7 @@
 class Result {
   static getWinValue(win, bid) {
     if (win) {
-      return bid;
+      return bid * 3;
     }
     return 0;
   }
